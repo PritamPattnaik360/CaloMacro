@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaloMacro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>CaloMacro</h1>
+        <p>A Simple Fitness Calorie and Macros Calculator</p>
+    </div>
+    
+    <div class="container">
+        <div class="presubmit">
+            <!-- Enter form -->
+            <form class="enterdata">
+                <button type="button">Toggle Metric & Imperial</button>
+                <input type="reset" value="Reset">
+                
+                <!-- Sex Selection -->
+                <div class="data" id="Sex">
+                    <h4>Sex</h4>
+                    <label><input type="radio" id="male" name="gender" value="male"> Male</label><br>
+                    <label><input type="radio" id="female" name="gender" value="female"> Female</label><br>
+                </div>
+                
+                <!-- Age Input -->
+                <div class="data" id="Age">
+                    <h4>Age</h4>
+                    <label for="Ageenter">Enter Age:</label>
+                    <input type="number" id="Ageenter" name="age" aria-label="Enter age"> Yrs.<br>
+                </div>
+                
+                <!-- Weight Input -->
+                <div class="data" id="Weight">
+                    <h4>Weight</h4>
+                    <div id="Imperial" class="Imperial">
+                        <label for="Weightenterpnds">Lbs:</label>
+                        <input type="number" id="Weightenterpnds" name="weight-lbs" aria-label="Enter weight in pounds"><br>
+                    </div>
+                    <div id="metric" class="metric">
+                        <label for="Weightenterkgs">Kgs:</label>
+                        <input type="number" id="Weightenterkgs" name="weight-kgs" aria-label="Enter weight in kilograms"><br>
+                    </div>
+                </div>
+                
+                <!-- Height Input -->
+                <div class="data" id="Height">
+                    <h4>Height</h4>
+                    <div id="Imperial" class="Imperial">
+                        <label for="HeightFtenter">Ft:</label>
+                        <input type="number" id="HeightFtenter" name="height-ft" aria-label="Enter height in feet"><br>
+                        <label for="HeightInenter">In:</label>
+                        <input type="number" id="HeightInenter" name="height-in" aria-label="Enter height in inches"><br>
+                    </div>
+                    <div id="metric" class="metric">
+                        <label for="HeightCMenter">Cm:</label>
+                        <input type="number" id="HeightCMenter" name="height-cm" aria-label="Enter height in centimeters"><br>
+                    </div>
+                </div>
+                
+                <!-- Activity Level -->
+                <div class="data" id="Activity">
+                    <h4>Activity</h4>
+                    <label><input type="radio" id="little" name="activity" value="sedentary"> Sedentary (Little/no)</label><br>
+                    <label><input type="radio" id="light" name="activity" value="light"> Light activity (1-2 days/week)</label><br>
+                    <label><input type="radio" id="moderate" name="activity" value="moderate"> Moderate (3-5 days/week)</label><br>
+                    <label><input type="radio" id="very" name="activity" value="very"> Very active (6-7 days/week)</label><br>
+                </div>
+                
+                <!-- Goal Selection -->
+                <div class="data" id="Goals">
+                    <h4>Goals</h4>
+                    <label><input type="radio" id="GainWeight" name="goal" value="gain"> Gain weight and muscle</label><br>
+                    <label><input type="radio" id="MaintainWeight" name="goal" value="maintain"> Maintain weight and gain muscle</label><br>
+                    <label><input type="radio" id="LoseWeight" name="goal" value="lose"> Lose weight and gain muscle</label><br>
+                </div>
+            </form>
+            <!-- Calculate Button -->
+            <button class="databutton">Calculate</button>
+        </div>
+        <!-- Results Section -->
+        <div id="results" class="results">
+            <table>
+                <tr>
+                    <th colspan="2">Results</th>
+                </tr>
+                <tr>
+                    <th>TDEE</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Protein</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Fat</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Carbs</th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Explanation Section -->
+        <div class="explaining">
+            <h3>Why?</h3>
+            <p id="Explanation">udhioaiod</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Made by Pritam Pattnaik</p>
+        <p>Connect with me:</p>
+        <a href="https://github.com/PritamPattnaik360" target="_blank">GitHub</a> | 
+        <a href="https://www.linkedin.com/in/pritam-pattnaik-acdmcwpn1/" target="_blank">LinkedIn</a> |
+        <a href="https://pritampattnaik360.github.io/PritamPattnaiksWebsite/" target="_blank">My Website</a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.title{
+    padding-left: 30px;
+}
+/* Background and Text Color */
+body {
+    background-color: rgb(66, 129, 170);
+    color: #fff;
+}
+.presubmit{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/* Container Styles */
+.container {
+    padding: 30px 10px;
+    background-color: rgb(66, 129, 170);
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form and Input Fields */
+.enterdata {
+    background-color: rgb(25, 73, 97);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input[type="number"] {
+    width: 60px;
+}
+
+/* Shared Data Style */
+.data, .results, .databutton, .explaining {
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 20px;
+    margin: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.data {
+    width: auto;
+}
+
+.databutton {
+    margin: 15px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    height: 10%;
+}
+.databutton:hover {
+    color: rgb(25, 73, 97);
+    background-color: #fff;
+}
+
+/* Results Box */
+.results {
+    background-color: rgb(25, 73, 97);
+}
+
+/* Explanation Section */
+.explaining {
+    background-color: rgb(25, 73, 97);
+    padding: 15px;
+    padding-left: 20px;
+}
+
+/* Table Styles */
+table, th, td {
+    border: 5px solid rgb(25, 73, 97);
+    border-collapse: collapse;
+}
+
+th, td {
+    background-color: rgb(25, 73, 97);
+    padding: 5px;
+}
+
+.footer {
+    background-color: rgb(66, 129, 170); /* Matches container background */
+    padding: 20px;
+    text-align: center;
+    color: #ebebeb;
+    font-size: 16px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+/* Hide metric by default */
+.metric {
+    display: none;
+}
